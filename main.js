@@ -20,6 +20,8 @@ mobileMenu.addEventListener("click", () => {
   mobileMenu.classList.toggle("open");
 
    document.body.classList.toggle("menu-open");
+  
+
 });
 
 // close menu when link is clicked
@@ -27,6 +29,9 @@ navItems.forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
     mobileMenu.classList.remove("open");
+
+   document.body.classList.toggle("menu-open");
+    
   });
 });
 
@@ -64,5 +69,6 @@ ScrollReveal().reveal(".reveal", {
   easing: "ease-in-out",
   interval: 200,
 });
+
 
 
