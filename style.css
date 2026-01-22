@@ -18,6 +18,7 @@ body {
 
 body.menu-open{
     overflow: hidden;
+}
 
 img {
     max-width: 100%;
@@ -602,5 +603,6 @@ section {
     }
 
 }
+
 
 
