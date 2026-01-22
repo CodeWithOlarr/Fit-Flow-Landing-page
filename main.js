@@ -9,13 +9,24 @@ faqItems.forEach(item => {
 });
 
 // mobile toggle
+// mobile toggle
 const mobileMenu = document.querySelector(".mobile-menu");
 const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 
 mobileMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   mobileMenu.classList.toggle("open");
 });
+
+// close menu when link is clicked
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    mobileMenu.classList.remove("open");
+  });
+});
+
 
 
 // SCROLL REVEAL
@@ -50,3 +61,4 @@ ScrollReveal().reveal(".reveal", {
   easing: "ease-in-out",
   interval: 200,
 });
+
