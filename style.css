@@ -16,6 +16,9 @@ body {
     background-color: #fff;
 }
 
+body.menu-open{
+    overflow: hidden;
+
 img {
     max-width: 100%;
     display: block;
@@ -599,4 +602,5 @@ section {
     }
 
 }
+
 
