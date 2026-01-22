@@ -15,7 +15,8 @@ A modern responsive landing page built with HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Live Demo
-Coming soon
+https://fitflow112008.netlify.app
 
 ## Author
 Olarr
+
