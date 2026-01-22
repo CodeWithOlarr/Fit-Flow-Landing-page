@@ -14,9 +14,12 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 
+
 mobileMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   mobileMenu.classList.toggle("open");
+
+   document.body.classList.toggle("menu-open");
 });
 
 // close menu when link is clicked
@@ -61,4 +64,5 @@ ScrollReveal().reveal(".reveal", {
   easing: "ease-in-out",
   interval: 200,
 });
+
 
